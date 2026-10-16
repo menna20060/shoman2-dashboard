@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101d3b">
+  <title>shoman Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div id="prog"></div>
+  <div id="site" hidden>
+    <header id="hdr"></header><main id="main"></main><footer id="foot"></footer>
+    <div class="scrim" id="scrim"></div>
+    <aside class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="pn-t" tabindex="-1">
+      <div class="ph"><div><div class="eyebrow" id="pn-e"></div><h3 id="pn-t"></h3></div><button class="xb" id="pn-x" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 2l12 12M14 2L2 14"/></svg></button></div>
+      <div class="pb" id="pn-b"></div>
+    </aside>
+    <div class="modal" id="legal" role="dialog" aria-modal="true"><div class="box legal"><div class="mh"><h3 id="lg-t"></h3><button class="xb" data-close="legal" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 2l12 12M14 2L2 14"/></svg></button></div><div class="mb" id="lg-b"></div></div></div>
+    <div class="modal lbx" id="lbx" role="dialog" aria-modal="true"><div class="box"><div class="art" id="lb-a"></div><div class="mc"><div id="lb-c"></div><button class="xb" data-close="lbx" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 2l12 12M14 2L2 14"/></svg></button></div></div></div>
+  </div>
+  <div id="admin" hidden></div><div id="proto"></div>
+  <script>window.SHOMAN_PAGE='home'</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
